@@ -55,11 +55,12 @@ public class CreateActivity extends AppCompatActivity {
                 // validation
                 if(TextUtils.isEmpty(mTitleEditText.getText()) || TextUtils.isEmpty(mDescEditText.getText())) {
                     setResult(RESULT_CANCELED, replyIntent);
+                } else {
+                    //create new ad
+                    Ad a = setAd(mTitleEditText.getText().toString(), mDescEditText.getText().toString());
+                    replyIntent.putExtra("adClass", a);
+                    setResult(RESULT_OK, replyIntent);
                 }
-                //create new pet
-                Ad a = setAd(mTitleEditText.getText().toString(), mDescEditText.getText().toString());
-                replyIntent.putExtra("adClass", a);
-                setResult(RESULT_OK, replyIntent);
                 finish();
                 return true;
         }
