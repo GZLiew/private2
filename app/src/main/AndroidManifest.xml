@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="@string/app_home_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".CreateActivity"
-            android:label="Create New Ad"
+            android:label="@string/app_create_name"
             android:theme="@style/EditorTheme"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -32,7 +32,7 @@
         </activity>
         <activity
             android:name=".ViewAdActivity"
-            android:label="Job View"
+            android:label="@string/app_view_ad_name"
             android:theme="@style/EditorTheme"
             android:parentActivityName=".MainActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->

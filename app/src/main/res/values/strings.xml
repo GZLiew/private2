@@ -4,4 +4,7 @@
     <string name="editor_activity_title_new_ad">Add an ad</string>
     <string name="action_save">Save</string>
     <string name="apply">Apply</string>
+    <string name="app_home_name">Jobs Listings</string>
+    <string name="app_create_name">Create New Ad</string>
+    <string name="app_view_ad_name">Job View</string>
 </resources>
